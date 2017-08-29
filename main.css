@@ -1,0 +1,61 @@
+/**My personal portfolio CSS**/
+/**Universal CSS; then class/IDs**/
+html {
+	height: 100%;
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+body {
+	background-image: url("images/mike-dennler.jpg");
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-size: cover;
+	position: relative;
+	margin:0;
+
+}
+
+.mainSection {
+	margin: 0 auto;
+  	padding-top: 64px;
+  	max-width: 640px;
+  	width: 94%;
+  	min-height: 100%;
+  	margin-bottom: : -75px;
+
+}
+
+h1{
+	text-align: center;
+	background-color: steelblue;
+	font-size: 40px;
+}
+
+p{
+	font-size: 20px;
+
+}
+
+.navbar-text > a {
+	color:inherit;
+	text-decoration: none;
+}
+
+.minion {
+	max-height: 200px;
+}
+
+.project {
+	background-color: lightblue;
+}
+
+.footer {
+	width: 100%;
+	height:75px;
+	bottom: 0;
+	left: 0;
+}
