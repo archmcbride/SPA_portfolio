@@ -1,119 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-      <script src="https://unpkg.com/vue"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/2.5.3/vue-router.js"></script>
-      <title>Katie McBride</title>
-      <script src="https://use.fontawesome.com/a855266b9d.js"></script>
-      <!-- Bootstrap -->
-      <!-- Latest compiled and minified CSS -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-      <link rel="stylesheet" type="text/css" href="/main.css">
-  </head>
-
-  <body>
-      <div id="app">
-            <div id="wrapper">
+      <head>
+          <meta charset="utf-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+          <script src="https://unpkg.com/vue"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/2.5.3/vue-router.js"></script>
+          <title>Katie McBride</title>
+          <script src="https://use.fontawesome.com/a855266b9d.js"></script>
+          <!-- Bootstrap -->
+          <!-- Latest compiled and minified CSS -->
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+          <link rel="stylesheet" type="text/css" href="/main.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+          <script src="js/bootstrap.min.js"></script>
+      </head>
+          
+      <body>
+          <div id="app">
               <h1>Katie McBride</h1>
-    <!-- NAV BAR -->
-                    <div class="container">
-                        <div class="header">
-                            <ul class="nav nav-pills">
-                              <li role="presentation" class="active"><a href="index.html">Home</a></li>
-                              <li role="presentation" class="active"><a href="projects.html">Projects</a></li>
-                              <li role="presentation" class="active"><a href="contacts.html">Contact Me</a></li>
-                            </ul>
-                        </div>
-                      </div>
-          <!-- MAIN BIO -->
-                  <div id= "mainSection" class="container">
-                        <div class="row">
-                            <div class="col-md-4"><img src="images/family2016.png" class="img-responsive" alt="Responsive image">Family photo</div>
-
-                            <div class="col-md-8"><p >Detail-oriented project manager transitioning to the tech world! Expert at planning projects (and kids and activites and girls night). I love helping people learn something new and be successful with their projects. </p>
-                            </div>
-                            <!--Change text to white once the size is smaller than 992px-->
-                        </div>
-                   </div>
-          <!-- PROJECTS          -->
-                        <div class="container">
-                              <div class="row project">
-                                  <div class="col-md-8"><p>Future project information</p>
-                                  </div>
-                                  <div class="col-md-4"><img src="images/minion_quote.png" class="img-responsive minion" alt="Responsive image"></div>
-                                  <!--Change text to white once the size is smaller than 992px-->
-                              </div><br />
-                              <div class="row project">
-                                  <div class="col-md-4"><img src="images/frog.png" class="img-responsive minion" alt="Responsive image"></div>
-                                  <div class="col-md-8"><p>Future project information</p>
-                                  </div>
-                                 <!--Change text to white once the size is smaller than 992px-->
-                              </div><br />
-                              <div class="row project">
-                                    <div class="col-md-8"><p>Future project information</p>
-                                    </div>
-                                    <div class="col-md-4"><img src="images/adulting_dog.png" class="img-responsive minion" alt="Responsive image"></div>
-                                    <!--Change text to white once the size is smaller than 992px-->
-                              </div><br />
-                        </div>
-
-
-          <!-- CONTACTS -->
-                  <div class="container">
-                        <div class="row">
-                          <div class="col-md-12"><p>Contact me!</p></div>
-                          <div class="col-md-8"><p>Email: archmcbride@hotmail.com</p>
-                          </div>
-                          <!--Change text to white once the size is smaller than 992px-->
-                        </div>
-                  </div>
-             <!-- CLOSING DIV for WRAPPER      -->
-            </div>
-
-
-
-
-
-
-
-          <!-- FOOTER SECTION --> <!--Change this to a COMPONENT?-->
-             <div id="footer" class="navbar navbar-inverse navbar-bottom" role="navigation"> 
                 <div class="container">
-                    <div class="navbar-text pull-left">
-                        <p>&copy 2017 archmcbride</p>
-                    </div>
-                    <div class="navbar-text pull-right">
-                      <a href="https://www.linkedin.com/in/katie-mcbride-archmcbride" target="_blank">
-                        <span class="fa-stack fa-lg">
-                          <i class="fa fa-square-o fa-stack-2x"></i>
-                          <i class="fa fa-linkedin fa-stack-1x"></i>
-                        </span></a><br>
-                       <a href="https://https://github.com/archmcbride" target="_blank">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-square-o fa-stack-2x"></i>
-                            <i class="fa fa-github fa-stack-1x"></i>
-                        </span></a><br>
-                       <a href="https://twitter.com/archmcbride" target="_blank">
-                        <span class="fa-stack fa-lg">
-                          <i class="fa fa-square-o fa-stack-2x"></i>
-                          <i class="fa fa-twitter fa-stack-1x"></i>
-                        </span></a><br>  
-                      
-                    </div>
-                  
-                </div>
-            </div>
-      
-          <router-view></router-view>
-      </div> <!--CLOSING DIV FOR #APP-->           
+                      <div class="header">
+                            <ul class="nav nav-pills">
+                                <li role="presentation" class="active"><router-link to="/">Home</router-link></li>
+                                <li role="presentation" class="active"><router-link to="/projects">Projects</router-link></li>
+                                <li role="presentation" class="active"><router-link to="/contacts">Contact Me</router-link></li>
+                            </ul>
+                      </div>
+                  </div>
 
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="/main.js"></script>
-  </body>
+                <div id= "mainSection" class="container">
+                      <router-view></router-view>
+                 </div>
+    
+
+                 <div class="footer" class="navbar navbar-inverse navbar-bottom" role="navigation"> 
+                      <div class="container">
+                          <div class="navbar-text pull-left">
+                              <p>&copy 2017 archmcbride</p>
+                          </div>
+                          <div class="navbar-text pull-right">
+                              <a href="https://www.linkedin.com/in/katie-mcbride-archmcbride" target="_blank">
+                                  <span class="fa-stack fa-lg">
+                                    <i class="fa fa-square-o fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x"></i>
+                                  </span></a><br>
+                               <a href="https://https://github.com/archmcbride" target="_blank">
+                                  <span class="fa-stack fa-lg">
+                                      <i class="fa fa-square-o fa-stack-2x"></i>
+                                      <i class="fa fa-github fa-stack-1x"></i>
+                                  </span></a><br>
+                               <a href="https://twitter.com/archmcbride" target="_blank">
+                                  <span class="fa-stack fa-lg">
+                                    <i class="fa fa-square-o fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x"></i>
+                                  </span></a><br>  
+                            
+                          </div>
+                      </div>
+                </div>
+          </div>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+           
+            <script src="/main.js"></script>
+            <!-- Include all compiled plugins (below), or include individual files as needed -->
+             
+          
+      </body>
 </html>

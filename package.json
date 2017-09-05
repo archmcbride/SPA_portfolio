@@ -7,8 +7,16 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/archmcbride/SPA_portfolio.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/archmcbride/SPA_portfolio/issues"
+  },
+  "homepage": "https://github.com/archmcbride/SPA_portfolio#readme",
   "dependencies": {
     "express": "^4.15.4"
   }

@@ -1,47 +1,66 @@
 var myRouter = new VueRouter({
     routes: [
+
+        // {
+        //     path: '/index',
+        //     // because we don't have the component initially, we write a function that defines how to get it, using AJAX
+        //     // when we finally have the component, we RESOLVE it. if we fail to retrieve the component, we REJECT.
+        //     component: function(resolve, reject){
+        //         $.get('/index.html', function(htmlFromServer){
+        //             resolve({
+        //                 template: htmlFromServer
+        //             })
+        //         })
+        //     }
+        // }
+       
         {
-            path: '/', // localhost:8080/#
+            path: '/',
+            // because we don't have the component initially, we write a function that defines how to get it, using AJAX
+            // when we finally have the component, we RESOLVE it. if we fail to retrieve the component, we REJECT.
             component: {
-                template: `<h1 class="text-center">Random Image Gallery.</h1>`,   
+               template: `<div class="container" >
+                   <div class="row">
+                        <div class="cell">
+                           <div class="col-md-4"><img src="images/family2016.png" class="img-responsive" alt="Responsive image">Family photo</div>
+                           <div class="col-md-8"><p >Detail-oriented project manager transitioning to the tech world! Expert at planning projects (and kids and activites and girls night). I love helping people learn something new and be successful with their projects. </p>
+                           </div>
+                        </div>
+                   </div>
+                 <!--Change text to white once the size is smaller than 992px-->
+               </div>`
+            }
+            // component: {
+            //     template: '<h1>hello</h1>'
+            // }
+        },
+        {
+            path: '/contacts',
+            // because we don't have the component initially, we write a function that defines how to get it, using AJAX
+            // when we finally have the component, we RESOLVE it. if we fail to retrieve the component, we REJECT.
+            component: {
+                template:
+                `<div class="container table stretch-v ">
+                  <div class="row stretch-v"> 
+
+                          <div class="col-md-12"><p>Contact me!</p></div>
+                          <div class="col-md-8"><p>Email: archmcbride@hotmail.com</p></div>
+                   </div>  
+                </div>`
             }
         },
         {
-            //just like in express, we can use parameterized URLs with Vue
-            /*
-            /images/cats
-            /images/business
-            /images/abstract
-            */
-           // path: '/images/:category',
-            // component : {
-            //     computed: {
-            //         // imageUrl needs to be computed, not just regular data, because the $route.params change. whenever they change, we want to recalculate the imageUrl
-            //         imageUrl: function(){
-            //             // in express, we accessed req.params. here, we have this.$route.params.
-            //             return `http://lorempixel.com/400/400/${this.$route.params.category}`
-            //             return `/images/${this.$route.params.category}.jpg`
-            //         }
-            //     },
-            //     template: '#images',
-            //     created: function(){ console.log('created the images component')},
-            //     destroyed: function(){ console.log('destroyed the images component')}
-            // }
-
-        },
-        {
-            // path: '/about',
-            // // because we don't have the component initially, we write a function that defines how to get it, using AJAX
-            // // when we finally have the component, we RESOLVE it. if we fail to retrieve the component, we REJECT.
-            // component: function(resolve, reject){
-            //     $.get('/about.html', function(htmlFromServer){
-            //         resolve({
-            //             template: htmlFromServer
-            //         })
-            //     })
-            // }
+            path: '/projects',
+            // because we don't have the component initially, we write a function that defines how to get it, using AJAX
+            // when we finally have the component, we RESOLVE it. if we fail to retrieve the component, we REJECT.
+            component: function(resolve, reject){
+                $.get('/projects.html', function(htmlFromServer){
+                    resolve({
+                        template: htmlFromServer
+                    })
+                })
+            }
         }
-
     ]
 })
 
@@ -52,8 +71,5 @@ var mainVm = new Vue({
     el: '#app',
     router: myRouter,
     data: {
-        // user : {
-        //     name: 'steve'
-        }
     }
 })
