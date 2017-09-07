@@ -1,18 +1,5 @@
 var myRouter = new VueRouter({
     routes: [
-
-        // {
-        //     path: '/index',
-        //     // because we don't have the component initially, we write a function that defines how to get it, using AJAX
-        //     // when we finally have the component, we RESOLVE it. if we fail to retrieve the component, we REJECT.
-        //     component: function(resolve, reject){
-        //         $.get('/index.html', function(htmlFromServer){
-        //             resolve({
-        //                 template: htmlFromServer
-        //             })
-        //         })
-        //     }
-        // }
        
         {
             path: '/',
@@ -51,14 +38,28 @@ var myRouter = new VueRouter({
         },
         {
             path: '/projects',
-            // because we don't have the component initially, we write a function that defines how to get it, using AJAX
-            // when we finally have the component, we RESOLVE it. if we fail to retrieve the component, we REJECT.
-            component: function(resolve, reject){
-                $.get('/projects.html', function(htmlFromServer){
-                    resolve({
-                        template: htmlFromServer
-                    })
-                })
+            component: {
+                template:
+                `<div class="container">
+                      <div class="row project">
+                          <div class="col-md-8"><p>Future project information</p>
+                          </div>
+                          <div class="col-md-4"><img src="images/minion_quote.png" class="img-responsive minion" alt="Responsive image"></div>
+                          <!--Change text to white once the size is smaller than 992px-->
+                      </div><br />
+                      <div class="row project">
+                          <div class="col-md-4"><img src="images/frog.png" class="img-responsive minion" alt="Responsive image"></div>
+                          <div class="col-md-8"><p>Future project information</p>
+                          </div>
+                          <!--Change text to white once the size is smaller than 992px-->
+                      </div><br />
+                      <div class="row project">
+                          <div class="col-md-8"><p>Future project information</p>
+                          </div>
+                          <div class="col-md-4"><img src="images/adulting_dog.png" class="img-responsive minion" alt="Responsive image"></div>
+                          <!--Change text to white once the size is smaller than 992px-->
+                      </div><br />
+                </div>`
             }
         }
     ]
