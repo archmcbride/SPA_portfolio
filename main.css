@@ -11,7 +11,7 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-size: 100%;
-	margin-bottom:150px;
+	margin-bottom: 150px;
 	background-position: top;
 	/*overflow-x: hidden;*/
 }
@@ -22,22 +22,12 @@ body {
 }
 
 #mainSection {
-	margin: 0 auto;
+	margin: 0 200 0 200;
   	padding-top: 64px;
   	max-width: 640px;
   	width: 94%;
   	height: 100%; 	
 }
-
-/*
-@media (min-height: 700px) {
-
-	#app {
-		height : auto;
-	}
-
-}*/
-
 
 h1{
 	text-align: center;
@@ -49,6 +39,9 @@ p{
 	font-size: 20px;
 	text-align: left;
 
+}
+.container{
+	margin-left: 0px;
 }
 
 .navbar-text > a {
